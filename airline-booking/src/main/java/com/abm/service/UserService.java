@@ -22,7 +22,7 @@ import com.abm.repository.UserRepository;
   
   if( count == 1L) { 
 	  //some condition to fetch full name of user
-	  String fullName = userRepo.getFullName(email);
+	 // String fullName = userRepo.getFullName(email);
 	  return true;
 	 
   } 
