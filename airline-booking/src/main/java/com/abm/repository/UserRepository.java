@@ -15,6 +15,7 @@
   public long verifyByEmailPass(String email, String password);
   
   
+  
 	/*
 	 * @Query("select  u.fullName from User u where u.email =?1") public String
 	 * getFullName(String email);

@@ -13,6 +13,7 @@
          }
   form {
   border: 3px solid #f1f1f1;
+  
       }
 
 input[type=email], input[type=password] {
