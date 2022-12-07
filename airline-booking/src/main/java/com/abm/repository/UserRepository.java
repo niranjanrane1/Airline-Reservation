@@ -10,10 +10,8 @@
   public interface UserRepository extends CrudRepository<User, Integer>{
   
   
-  
   @Query("select count(u) from User u where u.email= ?1 and u.password =?2")
   public long verifyByEmailPass(String email, String password);
-  
   
   
 	/*

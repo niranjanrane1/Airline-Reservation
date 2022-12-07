@@ -8,7 +8,7 @@
 <title>success</title>
 </head>
 <body>
-<h1>${fullName }</h1>
+<h1>Welcome</h1>
 
 </body>
 </html>

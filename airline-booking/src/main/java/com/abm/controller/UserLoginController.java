@@ -37,7 +37,7 @@ public class UserLoginController {
 		 
 		 if(verified) {
 			 
-			 model.put("userEmail",userEmail);
+			 //model.put("userEmail",userEmail);
 			 //HttpSession hs = new HttpSession();
 			 return "success";
 		 }
@@ -57,6 +57,5 @@ public class UserLoginController {
 	 
 	
 	 
-	
 
 }

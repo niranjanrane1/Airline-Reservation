@@ -45,7 +45,7 @@ button:hover {
 <body>
   <form action = "loginVerification">
   <div class="user">
-     Enter Your Email id : <input type="email" name="userEmail" value="${userEmail}"/>
+     Enter Your Email id : <input type="email" name="userEmail" />
      <br>
      Enter Your Password :  <input type="password" name="userPassword" /> 
      <br>

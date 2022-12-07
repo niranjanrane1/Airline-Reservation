@@ -9,7 +9,7 @@
 </head>
 <body>
 
- <font color="red">${errorMessage}</font>
+ <font color="red">${errorMessage} </font>
 
 </body>
 </html>
