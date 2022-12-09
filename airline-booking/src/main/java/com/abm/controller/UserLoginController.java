@@ -30,6 +30,7 @@ public class UserLoginController {
 	@Autowired
 	private UserService userService;
 	
+	
 	 @RequestMapping(value = "/loginVerification") 
 	 public String loginVerification(ModelMap model, @RequestParam String userEmail, @RequestParam String userPassword) {
 		 

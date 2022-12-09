@@ -14,10 +14,10 @@
   @Test void addUser() {
   
   User admin = new User(); 
-  admin.setFullName("Shubham Patil");
+  admin.setFullName("Pritam Patil");
   admin.setAdmin(true); 
   admin.setTitle("Mr.");
-  admin.setEmail("shubham@airline.com"); 
+  admin.setEmail("pritamchaphekar58@gmail"); 
   admin.setPassword("Pass@12345");
   admin.setWallet(53000.0); 
   userRepo.save(admin);
