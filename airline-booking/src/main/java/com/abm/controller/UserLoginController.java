@@ -58,6 +58,15 @@ public class UserLoginController {
 		 
 	 }
 	 
+	 @RequestMapping(value="/register", method= RequestMethod.GET)
+	 public String showRegisterPage(User user,Map<String ,Object> model) {
+		 userService.register(user);
+		 
+		 
+		 return "userlogin";
+		 
+	 }
+	 
 	
 	 
 

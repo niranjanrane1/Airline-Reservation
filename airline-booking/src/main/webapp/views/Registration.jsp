@@ -102,8 +102,8 @@ a {
 
 Title: <input type="text" name="title" placeholder="Title"/><br/> 
 
-First Name: <input type="text" name="fname" placeholder="First Name" /><br/> 
-Last Name: <input type="text" name="lname" placeholder="Last Name" /> 
+full Name: <input type="text" name="fullName" placeholder="First Name" /><br/> 
+
 
 
 </br>
@@ -111,10 +111,10 @@ Email: <input type="email" name="email" placeholder="Email Address" required/><b
 
 </br>
 <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+    <input type="password" placeholder="Enter Password" name="password" id="password" required>
 
     <label for="psw-repeat"><b>Repeat Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required> 
+    <input type="password" placeholder="Repeat Password" name="password" id="password" required> 
 
 
 
