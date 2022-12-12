@@ -40,6 +40,18 @@ public class User {
 	
 	@OneToMany(mappedBy = "user")
 	private List<Reservation> reservations;
+	
+	@Column(name = "reset_password_token") 
+
+    private String resetPasswordToken;
+
+    public String getResetPasswordToken() {
+        return resetPasswordToken; 
+        }
+
+    public void setResetPasswordToken(String resetPasswordToken) {
+          this.resetPasswordToken = resetPasswordToken;
+    }
 
 	public int getId() {
 		return id;

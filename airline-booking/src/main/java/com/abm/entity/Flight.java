@@ -12,6 +12,10 @@ import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 @Entity
 @Table(name = "tbl_flight")
 public class Flight {
@@ -29,9 +33,11 @@ public class Flight {
 	@Column(name = "flight_to")
 	private String toAirport;
 	
+	@DateTimeFormat(pattern = "yyyy-MM-dd;")
 	@Column(name = "flight_depart")
 	private LocalDate depatureDate;
 	
+	@DateTimeFormat(pattern = "yyyy-MM-dd;")//@JsonFormat(pattern = "yyyy-MM-dd")
 	@Column(name = "flight_arrival")
 	private LocalDate arrivalDate;
 	
