@@ -1,3 +1,4 @@
+//Writer Pritam Rajendra Chaphekar. 09/12/2022
 
   package com.abm.repository;
   
@@ -14,8 +15,8 @@ import com.abm.entity.User;
   @Query("select count(u) from User u where u.email= ?1 and u.password =?2")
   public long verifyByEmailPass(String email, String password);
   
-  @Query("select u from User u Where u.email = :email")
-   public User findByEmail(@Param("email") String email);
+  @Query("select u from User u Where u.email =?1")
+   public User findByEmail(String email);
   
 	/*
 	 * @Query("select  u.fullName from User u where u.email =?1") public String

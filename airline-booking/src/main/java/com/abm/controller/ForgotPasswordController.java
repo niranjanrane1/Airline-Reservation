@@ -1,3 +1,5 @@
+//Writer Pritam Rajendra Chaphekar. 09/12/2022
+
 package com.abm.controller;
 
 import java.io.UnsupportedEncodingException;
@@ -43,9 +45,12 @@ public class ForgotPasswordController {
 	@Autowired
 	private UserRepository userRepo;
 	
+	@Autowired
+	private UserService userService;
 	
-	  @Autowired 
-	  private BCryptPasswordEncoder bcrypt;
+	/*
+	 * @Autowired private BCryptPasswordEncoder bcrypt;
+	 */
 	 
 	
 	@RequestMapping("/forgot_password")
@@ -134,17 +139,16 @@ public class ForgotPasswordController {
 	
 	
 	  @PostMapping("/change-password") public String
-	  changePassword(@RequestParam("newpassword") String newpassword, HttpSession
+	  changePassword(@RequestParam("newPassword") String newpassword, HttpSession
 	  session) {
-	  
-	  String email=(String)session.getAttribute("email"); User user=
-	  this.userRepo.findByEmail(email);
-	  user.setPassword(this.bcrypt.encode(newpassword)); this.userRepo.save(user);
-	  
-	  return "userlogin";
-	  
-	  
-	  
+		 
+		  String email=(String)session.getAttribute("email"); 
+		  User user= this.userRepo.findByEmail(email); 
+		  user.setPassword(newpassword);
+		  this.userRepo.save(user);
+		 
+		  return "userlogin";
+
 	  }
 	 
 	
